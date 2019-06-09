@@ -1,0 +1,1 @@
+ubah directory .txt agar program dapat berjalan

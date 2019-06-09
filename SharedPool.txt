@@ -1,0 +1,21 @@
+
+Query : select nim from Mahasiswa where nama = "jamal";
+PROJECTION nim,  -- on the fly
+SELECTION nama A1
+Cost : 100000
+
+Query : select nim from Mahasiswa where nama = "jamal";
+PROJECTION nim,  -- on the fly
+SELECTION nama A2
+Cost : 3.0
+QEP OPTIMAL : QEP#2
+Query : select nama from MataKuliah where sks = "3";
+PROJECTION nama,  -- on the fly
+SELECTION sks A1
+Cost : 6
+
+Query : select nama from MataKuliah where sks = "3";
+PROJECTION nama,  -- on the fly
+SELECTION sks A2
+Cost : 2.0
+QEP OPTIMAL : QEP#2
